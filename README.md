@@ -4,12 +4,15 @@ Chrome extension that automatically resets the NCAA March Madness Live free prev
 
 ## Install
 
-1. Go to `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked** → select this folder
+1. Code button > HTTP > Copy URL to clipboard
+2. Open Terminal (Mac) or Cmd Prompt (Windows) and make a folder
+3. Run git clone <paste in link you copied here> 
+4. Go to `chrome://extensions`
+5. Enable **Developer mode**
+6. Click **Load unpacked** → select this folder
 
 ## Usage
 
-- Auto-resets every 9 minutes by default (preview expires at 10 min)
+- Auto-resets every 9 minutes by default
 - Click the extension icon to reset manually or adjust the interval
 - Badge shows ON/OFF status
