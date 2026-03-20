@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "March Madness Preview Reset",
+  "version": "1.0",
+  "description": "Automatically resets the March Madness Live free preview timer",
+  "permissions": [
+    "cookies",
+    "storage",
+    "alarms",
+    "browsingData",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.ncaa.com/*",
+    "*://*.ngtv.io/*",
+    "*://*.turner.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.ncaa.com/march-madness-live/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
