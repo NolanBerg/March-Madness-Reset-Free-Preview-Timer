@@ -6,7 +6,7 @@ Chrome extension that automatically resets the NCAA March Madness Live free prev
 
 1. Code button > HTTP > Copy URL to clipboard
 2. Open Terminal (Mac) or Cmd Prompt (Windows) and make a folder
-3. Run git clone <paste in link you copied here> 
+3. Run "git clone https://github.com/NolanBerg/March-Madness-Reset-Free-Preview-Timer.git" (This is link you copied)  
 4. Go to `chrome://extensions`
 5. Enable **Developer mode**
 6. Click **Load unpacked** → select this folder
